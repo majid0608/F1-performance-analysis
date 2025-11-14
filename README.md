@@ -1,151 +1,136 @@
- Formula 1 Power BI Dashboard
-By Abdul Majid
-A fully interactive multi-page Power BI dashboard analyzing Formula 1 racing data, including drivers, teams, circuits, championships, and geographic trends.
-Built using Jolpica F1 API, advanced data modeling, and DAX measures to uncover actionable insights.
+# 🏎️ Formula 1 Power BI Dashboard Analysis
 
-📌 Table of Contents
-Project Overview
+## Project Description
 
-Dataset Source
+This project presents an interactive **Formula 1 analytics dashboard** created using Power BI.
+By leveraging historical F1 data—including drivers, teams, circuits, races, and championship statistics—the dashboard provides an intuitive view of performance trends and racing patterns across seasons and countries.
+It aims to simplify the exploration of F1 history and highlight key insights about team dominance, driver achievements, and track distribution across the globe.
 
-Objective
+---
 
-Approach
+## Objective
 
-Dashboard Pages
+The primary objective of this project is to create a visually rich, data-driven dashboard that helps users:
 
-Key Insights
+* Understand team and driver performance over time
+* Analyze the geographical distribution of Formula 1 circuits
+* Study race trends, win patterns, and seasonal performance
+* Explore data interactively using dynamic filtering and DAX-based measures
 
-Business Impact
+---
 
-Future Improvements
+## Methodology
 
-Files in this Repository
+### **1. Data Collection**
 
-How to Use
+* Source: **Jolpica F1 API**, an open-source dataset containing complete details about drivers, teams, races, circuits, and championships.
 
-Author
+### **2. Data Preprocessing**
 
-📊 Project Overview
-This project focuses on analyzing Formula 1 racing data using Power BI to extract insights about:
+* Cleaned and structured raw tables
+* Established relationships between drivers, races, teams, and circuits
+* Removed duplicates and standardized fields for seamless model integration
 
-Driver performance
+### **3. Data Modeling**
 
-Team dominance
+* Built a star-schema-based model in Power BI
+* Created relationships using primary and foreign keys
+* Added calculated columns and measures for points, wins, races, and consistency trends
 
-Race locations & global circuit participation
+### **4. Visualization Development**
 
-Season-wise championship trends
+* Developed a **multi-page interactive dashboard** including:
 
-Geographic distribution of races
+  * Main Overview
+  * Geographic Circuit Participation
+  * Driver Stats
+  * Team Stats
 
-The dashboard helps users explore F1’s history and performance trends in a dynamic, visually appealing way.
+### **5. DAX Measures**
 
-🗂️ Dataset Source
-Data is collected from:
-Jolpica F1 API — an open-source API providing detailed Formula 1 records such as:
+* Implemented DAX for:
 
-Drivers
+  * Total Wins
+  * Total Points
+  * Average Points
+  * Race Count
+  * Season-wise performance trends
 
-Teams
+---
 
-Races
+## Dashboard Features
 
-Circuits
+### **1️⃣ Main Dashboard Overview**
 
-Championships
+* KPIs for total drivers, races, seasons, teams
+* Leaderboard for top-performing teams
+* Bar chart showing drivers with highest career wins
 
-Historical season data
+### **2️⃣ Circuit Participation Map**
 
-🎯 Objective
-Analyze Formula 1 data to extract meaningful insights.
+* World map visualization of countries hosting F1 races
+* Highlights regional dominance (Europe leading)
+* Region-specific filtering through slicers
 
-Build a multi-page interactive Power BI dashboard using relationships, slicers, and advanced visuals.
+### **3️⃣ Driver Stats Dashboard**
 
-Create DAX measures for accurate KPIs such as wins, points, race count, and trends.
+* KPIs reflecting driver details and performance
+* Matrix for comparing all drivers
+* Area charts showing win patterns across years
 
-Identify top-performing drivers and teams across seasons and countries.
+### **4️⃣ Team Stats Dashboard**
 
-Visualize global circuit participation using maps.
+* KPIs for team performance
+* Season-wise performance line charts
+* Wins by country (bar chart)
+* Donut chart showing nationality distribution of teams
 
-🛠️ Approach
-Data Collection
+---
 
-Imported Formula 1 data from the Jolpica F1 API.
+## Results
 
-Data Modeling
+* **Ferrari emerged as the most dominant team**, leading race wins and overall points
+* **Europe hosts the majority of circuits**, with the UK and Italy being top contributors
+* **Lewis Hamilton and Michael Schumacher** lead in career wins
+* **Performance trends indicate rising competitiveness** post-2010
+* Driver and team performance shows strong dependence on race location
 
-Cleaned, structured, and related all tables for smooth drill-down analysis.
+---
 
-Created primary and foreign key relationships across teams, drivers, races, and circuits.
+## Conclusion
 
-DAX Implementation
+This project demonstrates the power of **interactive visualization** in understanding complex sports data.
+The dashboard delivers a comprehensive view of Formula 1 history while offering valuable insights into driver achievements, team dominance, and global racing patterns.
 
-Developed measures for wins, points, total races, average points, season-wise trends, etc.
+It serves as a dynamic exploration tool for fans, analysts, and stakeholders interested in performance evaluation and trend monitoring.
 
-Dashboard Design
+---
 
-Designed 4 interactive pages including KPIs, maps, charts, and slicers.
+## Future Directions
 
-Ensured dynamic filtering for team, driver, season, and geography.
+* Integrate **fastest lap** and **pit stop analytics**
+* Add **starting grid vs finishing position** comparison
+* Include **driver vs team performance benchmarking**
+* Combine Python predictive analytics for **race outcome forecasting**
+* Enhance visuals with more granular season-wise interaction
 
-📌 Dashboard Pages
-1️⃣ Main Dashboard Overview
-KPIs: total drivers, teams, races, seasons, leading team by points.
+---
 
-Matrix of Top 10 Teams by wins, points, and ranking.
+## Tools & Technologies
 
-Bar chart showing Top Drivers by Wins.
+* **Software:** Power BI Desktop
+* **Language:** DAX (for calculations)
+* **Data Source:** Jolpica F1 API
+* **Modules Used:** Data Modeling, KPIs, Maps, Bar/Line Charts, Slicers
 
-2️⃣ Map of Circuit Participation
-World map showing number of races hosted by each country.
+---
 
-Region slicer for Europe, Asia, North America, etc.
+## Author
 
-Insight: Europe hosts the highest number of races historically.
+**Abdul Majid**
+Power BI | Data Analytics | SQL | Python
+*https://github.com/majid0608*
 
-3️⃣ Driver Stats Overview
-KPIs: nationality, DOB, races, wins, average points, etc.
+---
 
-Matrix of all drivers with total wins & points.
-
-Area chart showing driver wins per year.
-
-4️⃣ Team Stats Overview
-KPIs: total wins, total points, avg points, races.
-
-Line chart: season-wise team performance.
-
-Bar chart: team wins by country.
-
-Donut chart: team nationality distribution.
-
-🔍 Key Insights
-Ferrari is the most consistent and dominant team with 240 wins.
-
-Most races occur in Europe (UK, Italy, Germany).
-
-Lewis Hamilton and Michael Schumacher lead in historical wins.
-
-Global participation has expanded to Asia & Middle East in recent years.
-
-Teams show strong geographical bias — European teams dominate championships.
-
-💼 Business Impact
-Helps teams benchmark performance and identify competitive gaps.
-
-Shows long-term racing trends to support strategic decisions.
-
-Highlights growth regions for potential race expansion.
-
-Provides a clear picture of team and driver strengths over time.
-
-🚀 Future Improvements
-Fastest lap analysis per driver/team.
-
-Driver vs Team comparison visuals.
-
-Start grid vs finish position analysis (overtake skill insights).
-
-Championship prediction model using Python.
 
